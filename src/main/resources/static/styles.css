@@ -1,133 +1,101 @@
-body {
-    font-family: "Be Vietnam Pro";
+*{
     margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
     width: 100%;
-    background-color: white;
-    font-weight: 300;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor:pointer;
 }
 
-h1 {
-    margin: 0;
-}
-
-.main-heading {
-    color: black;
-    font-size: 64px;
-    font-weight: 500;
-}
-.main-offer {
-    margin-top: 123px;
-    position: absolute;
-}
-.secondary-heading {
-    width: fit-content;
-}
-.under-heading {
-    display: flex;
-    gap: 5px;
-}
-.under-heading h2{
-    font-size: 1em;
-    font-weight: 400;
-    margin: 0;
-}
-.highlighted-h2 {
-    min-width: 57px;
-    max-height: fit-content;
-    background-color: #a2ba96;
-    text-align: center;
-}
-.main-content {
-    height: 368px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.navbar ul li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 20px;
     position: relative;
 }
-
-.main-content img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.header {
-    padding: 14px 20%;
-    background-color: white;
-}
-.nav-buttons a{
+.navbar ul li a{
     text-decoration: none;
-    color: black;
-    margin-right: 50px;
-    padding: 8px;
-}
-.nav-buttons a:hover,
-.nav-buttons a:focus,
-.nav-buttons a:active {
-    background-color: #F5F5F5;
-    border-radius: 8px;
-    color: #656565;
-}
-
-
-#register {
-    background-color: #638C2B;
-    border: none;
-    color: white;
-}
-.nav-reg-buttons {
-    display: flex;
-    align-items: center;
-    min-width: 220px;
-    justify-content: space-around;
-}
-.nav-reg-buttons a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 16px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #89BF3F;
-    border-radius: 8px;
-}
-.nav-buttons {
-    display: flex;
-    align-items: center;
-    margin-left: 97px;
-    margin-right: 97px;
-
-}
-.logo-text {
-    font-size: 16px;
-    max-width: 88px;
+    color: #fff;
     text-transform: uppercase;
-    color: #89BF3F;
-    margin-left: 6px;
-    margin-right: 24px;
-}
-.nav {
-    display: flex;
 }
 
-#main-ctnt {
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #009688;
     position: absolute;
-
-}
-#main-h1 {
-    position: absolute;
-    top: 0;
     left: 0;
-    margin: 0;
-    padding: 20px;
-    font-size: 2em;
-    color: black;
+    bottom: -10px;
+    transition:0.5s;
 }
 
-.container {
-    margin-left: 20%;
-    margin-right: 20%;
+.navbar ul li:hover::after{
+    width: 100%;
 }
 
+.content{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
 
+.content h1{
+    front-size: 70px;
+    margin-top: 80px;
+}
+
+content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding:15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
