@@ -78,37 +78,3 @@ h1 {
 }
 
 
-.header-container {
-    position: relative;
-    width: 100%;
-    margin-left: -8px;
-    max-width: 100%;
-    margin-right: -8px;
-    height: auto; /* Adjusts container height based on image */
-    overflow: hidden;
-}
-
-#header-image {
-    width: 100%;
-    height: auto;
-}
-
-.header-text {
-    position: absolute;
-    width: 100%;
-    height: 100%; /* Matches height of container (and image) */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    padding: 20px; /* Adjust padding as needed */
-    box-sizing: border-box;
-}
-.header-text h1 {
-    width: fit-content;
-    background-color: #fd0000;
-    padding: 5px;
-}
-.header-text p {
-    text-shadow: black;
-}
