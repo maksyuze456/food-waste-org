@@ -16,9 +16,10 @@ h1 {
     font-weight: 500;
 }
 .main-offer {
-    margin-top: 123px;
     position: absolute;
+    z-index: 3;
 }
+
 .secondary-heading {
     width: fit-content;
 }
@@ -38,6 +39,7 @@ h1 {
     text-align: center;
 }
 .main-content {
+
     height: 368px;
     width: 100%;
     display: flex;
@@ -46,22 +48,25 @@ h1 {
     overflow: hidden;
     position: relative;
 }
-
+.image-text {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    left: calc(50% - 480px);
+}
 .main-content img {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
 }
 
-.header {
-    padding: 14px 20%;
-    background-color: white;
-}
-.nav-buttons a{
+.nav-buttons a, .nav-reg-buttons a{
     text-decoration: none;
     color: black;
-    margin-right: 50px;
-    padding: 8px;
+    padding: 6px;
+    font-size: 13px;
 }
 .nav-buttons a:hover,
 .nav-buttons a:focus,
@@ -93,22 +98,28 @@ h1 {
     border-radius: 8px;
 }
 .nav-buttons {
+    width: 530px;
     display: flex;
     align-items: center;
-    margin-left: 97px;
-    margin-right: 97px;
-
+    justify-content: space-around;
+    margin-right: 27px;
+    margin-left: 27px;
 }
 .logo-text {
-    font-size: 16px;
+    font-size: 13px;
     max-width: 88px;
     text-transform: uppercase;
     color: #89BF3F;
-    margin-left: 6px;
+    margin-left: 3px;
     margin-right: 24px;
+    align-content: center;
 }
 .nav {
+    padding-top: 4px;
+    padding-bottom: 4px;
     display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 #main-ctnt {
@@ -124,7 +135,13 @@ h1 {
     font-size: 2em;
     color: black;
 }
-
+.full-logo {
+    display: flex;
+}
+.full-logo img {
+    width: 47px;
+    height: 47px;
+}
 .container {
     margin-left: 20%;
     margin-right: 20%;
