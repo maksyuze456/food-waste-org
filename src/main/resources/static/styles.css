@@ -170,6 +170,7 @@ h1, h2 {
     height: 214px;
     background-color: #F5F5F5;
     margin-top: 15%;
+    bottom: 0;
 }
 .footer-cards {
     display: flex;
