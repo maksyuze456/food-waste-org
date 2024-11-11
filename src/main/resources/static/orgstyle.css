@@ -11,6 +11,9 @@ body {
     line-height: 1.6;
     background-color: #ffffff;
 }
+.footer {
+    margin-top: 0;
+}
 
 
 .logo-text {

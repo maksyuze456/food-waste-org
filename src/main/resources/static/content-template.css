@@ -7,16 +7,10 @@
 body {
     font-family: 'Be Vietnam Pro';
     color: #333;
-    line-height: 1.6;
     background-color: #ffffff;
 }
 
-.main-content {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #e0f2f1;
-    position: relative;
-}
+
 
 .main-content img {
     width: 100%;

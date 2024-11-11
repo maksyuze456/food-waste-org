@@ -69,13 +69,20 @@ h1, h2 {
 .card {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     height: fit-content;
     padding: 20px;
     gap: 24px;
-    border: solid 2px #D9D9D9;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 
+}
+#index-cards {
+    margin-bottom: 34px;
+}
+.card:hover {
+    transform: translateY(-10px);
 }
 .card img {
     display: flex;

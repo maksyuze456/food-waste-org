@@ -1,0 +1,9 @@
+.org-content {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    justify-items: center;
+}
+.intro-text {
+    max-width: 950px;
+}
