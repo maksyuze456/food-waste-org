@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.full-logo {
+    display: flex;
+    align-items: center;
+}
+
+.full-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #00796b;
+}
+
+.nav-buttons a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-reg-buttons a {
+    margin: 0 10px;
+    padding: 8px 15px;
+    color: #fff;
+    background-color: #00796b;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#sign-in {
+    background-color: #4CAF50;
+}
+
+#register {
+    background-color: #00796b;
+}
+
+
+.main-content {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e0f2f1;
+    position: relative;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: #00796b;
+}
+
+.under-heading h2 {
+    font-size: 1.5rem;
+}
+
+.highlighted-h2 {
+    font-size: 2rem;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards, .org-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card, .org-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover, .org-card:hover {
+    transform: translateY(-10px);
+}
+
+.card img, .org-card img {
+    width: 80%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
+}
+
+.card-text, .org-card h2, .org-card p {
+    padding: 20px;
+    text-align: center;
+}
+
+.org-card h2 {
+    font-size: 1.5rem;
+    color: #00796b;
+}
+
+.org-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+.cta-section {
+    text-align: center;
+    background-color: #00796b;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff7043;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-card {
+    width: 200px;
+    margin: 10px;
+}
+
+.footer-card h2 {
+    font-size: 1.2rem;
+    color: #ff7043;
+    margin-bottom: 10px;
+}
+
+.footer-card p {
+    font-size: 0.9rem;
+}
+
+.footer-social-media img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-card {
+    width: 200px;
+    margin: 10px;
+}
+
+.footer-card h2 {
+    font-size: 1.2rem;
+    color: #ff7043;
+    margin-bottom: 10px;
+}
+
+.footer-card p {
+    font-size: 0.9rem;
+}
+
+.footer-social-media {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-social-media img {
+    width: 30px;
+}
+
+
