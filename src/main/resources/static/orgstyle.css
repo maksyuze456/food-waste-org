@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Be Vietnam Pro';
     color: #333;
@@ -23,12 +22,14 @@ body {
     font-weight: 300;
 }
 
+
 .main-content {
     text-align: center;
     padding: 40px 20px;
     background-color: #e0f2f1;
     position: relative;
 }
+
 
 .main-content img {
     width: 100%;
@@ -38,6 +39,7 @@ body {
     opacity: 0.3;
 }
 
+
 .image-text {
     position: absolute;
     top: 50%;
@@ -46,20 +48,24 @@ body {
     color: #333;
 }
 
+
 .main-heading {
     font-size: 2.5rem;
     color: #00796b;
 }
 
+
 .under-heading h2 {
     font-size: 1.5rem;
 }
+
 
 .highlighted-h2 {
     font-size: 2rem;
     color: #d32f2f;
     font-weight: bold;
 }
+
 
 .container {
     max-width: 1200px;
@@ -69,11 +75,13 @@ body {
     flex-wrap: wrap;
 }
 
+
 .cards, .org-section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 
 .card, .org-card {
     width: 300px;
@@ -85,9 +93,11 @@ body {
     transition: transform 0.3s;
 }
 
+
 .card:hover, .org-card:hover {
     transform: translateY(-10px);
 }
+
 
 .card img, .org-card img {
     width: 80%;
@@ -99,20 +109,25 @@ body {
     padding-top: 20px;
 }
 
+
 .card-text, .org-card h2, .org-card p {
     padding: 20px;
     text-align: center;
 }
+
 
 .org-card h2 {
     font-size: 1.5rem;
     color: #00796b;
 }
 
+
 .org-card p {
     font-size: 1rem;
     color: #555;
 }
+
+
 
 
 .cta-section {
@@ -122,14 +137,17 @@ body {
     color: #fff;
 }
 
+
 .cta-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
 
+
 .cta-section p {
     margin-bottom: 20px;
 }
+
 
 .cta-button {
     background-color: #ff7043;
@@ -139,6 +157,184 @@ body {
     text-decoration: none;
     font-weight: bold;
 }
+.faq-section {
+    background-color: #e9f5f2;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.faq-section h2 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+
+.faq-item {
+    margin-bottom: 25px;
+    text-align: left;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #00796b;
+    margin-bottom: 8px;
+}
+
+
+.faq-item p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
 
 
 
+
+.cta-section {
+    text-align: center;
+    background-color: #00796b;
+    padding: 40px 20px;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+
+.cta-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #e0f7fa;
+}
+
+
+.cta-button {
+    background-color: #ff7043;
+    padding: 12px 30px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+
+.case-study-section {
+    background-color: #e0f7f9;
+    padding: 50px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.case-study-section h2 {
+    font-size: 2rem;
+    color: #00796b;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.case-study-section p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.case-studies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+
+.case-study {
+    background-color: #ffffff;
+    width: calc(33.333% - 40px);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+
+.case-study h3 {
+    font-size: 1.25rem;
+    color: #00796b;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.case-study p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+
+
+.case-study:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .case-study {
+        width: 100%;
+        max-width: 100%;
+    }
+    .case-studies {
+        gap: 10px;
+    }
+}
+.intro-image-section {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+
+.intro-image-section .intro-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
