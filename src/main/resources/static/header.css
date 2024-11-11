@@ -1,0 +1,68 @@
+/*  header/navigation bar   */
+.nav {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+/*  logo icon and logo text */
+.full-logo {
+    display: flex;
+}
+.full-logo img {
+    width: 47px;
+    height: 47px;
+}
+.logo-text {
+    font-size: 13px;
+    max-width: 88px;
+    text-transform: uppercase;
+    color: #89BF3F;
+    margin-left: 3px;
+    margin-right: 24px;
+    align-content: center;
+}
+/*---------------------------*/
+/*  navigation buttons      */
+.nav-buttons {
+    width: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 27px;
+    margin-left: 27px;
+}
+.nav-buttons a, .nav-reg-buttons a{
+    text-decoration: none;
+    color: black;
+    padding: 6px;
+    font-size: 13px;
+}
+.nav-buttons a:hover,
+.nav-buttons a:focus,
+.nav-buttons a:active {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    color: #656565;
+}
+.nav-reg-buttons {
+    display: flex;
+    align-items: center;
+    min-width: 220px;
+    justify-content: space-around;
+}
+.nav-reg-buttons a {
+    padding: 8px 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #89BF3F;
+    border-radius: 8px;
+}
+#register {
+    background-color: #638C2B;
+    border: none;
+    color: white;
+}
+
+/*--------header finish-------*/

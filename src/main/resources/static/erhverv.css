@@ -1,0 +1,80 @@
+body {
+    font-family: "Be Vietnam Pro";
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    font-weight: 300;
+}
+
+h1, h2 {
+    margin: 0;
+}
+.main {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.resized-image {
+    width: 100%; /* Ændrer størrelsen på billedet til 50% af forælderens bredde */
+    height: 400px; /* Bevarer billedets proportioner */
+    object-fit: cover; /* Bevarer billedets proportioner */
+
+}
+/* Erhverv-sektion */
+.erhverv-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Sørger for, at kortene tilpasser sig små skærme */
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #82c675;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #82c675;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #82c675;
+}

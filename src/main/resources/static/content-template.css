@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Be Vietnam Pro';
+    color: #333;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+.main-content {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e0f2f1;
+    position: relative;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+}
+
+.main-heading {
+    font-size: 2.5rem;
+    color: #00796b;
+}
+
+.intro-text {
+    margin-bottom: 20px;
+}
+
+.org-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.org-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.org-card:hover {
+    transform: translateY(-10px);
+}
+
+.org-card img {
+    width: 80%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    padding-top: 20px;
+}
+
+.org-card h2 {
+    font-size: 1.5rem;
+    color: #00796b;
+    padding: 20px;
+    text-align: center;
+}
+
+.org-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+}
+
+.cta-section {
+    text-align: center;
+    background-color: #00796b;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff7043;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
