@@ -242,89 +242,57 @@ body {
 }
 
 
-.case-study-section {
-    background-color: #e0f7f9;
-    padding: 50px 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-
-.case-study-section h2 {
-    font-size: 2rem;
-    color: #00796b;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-
-.case-study-section p {
-    font-size: 1.1rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
+/* Layout for Casestudier Cards */
 .case-studies {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: flex; /* Brug flexbox til at placere elementerne side om side */
+    justify-content: space-around; /* Fordeler pladsen mellem kortene */
+    flex-wrap: wrap; /* Gør, at kortene rykker ned på en ny linje, hvis skærmen er for smal */
     gap: 20px;
     padding: 20px 0;
 }
 
-
 .case-study {
     background-color: #ffffff;
-    width: calc(33.333% - 40px);
+    width: calc(33.333% - 40px); /* Gør kortene 1/3 af containerens bredde, minus lidt margin */
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0 auto;
-    max-width: 320px;
+    max-width: 320px; /* Maksimal bredde for kortene */
+    margin: 0 auto; /* Centrer kortene */
 }
 
-
-.case-study h3 {
-    font-size: 1.25rem;
-    color: #00796b;
-    font-weight: 600;
-    margin-bottom: 10px;
+.case-study-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    opacity: 1;
+    object-fit: cover;
+    object-position: center;
 }
 
-
-.case-study p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-}
-
-
-
-
+/* Hover Effekt */
 .case-study:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
+/* Responsiv styling */
 @media (max-width: 768px) {
     .case-study {
-        width: 100%;
+        width: 100%; /* Kortene vil tage fuld bredde på mindre skærme */
         max-width: 100%;
     }
     .case-studies {
         gap: 10px;
     }
 }
+
+
+
+
 .intro-image-section {
     width: 100%;
     overflow: hidden;
@@ -336,5 +304,5 @@ body {
     width: 100%;
     height: auto;
     max-height: 400px;
-    object-fit: cover;
+    object-position: center;
 }
