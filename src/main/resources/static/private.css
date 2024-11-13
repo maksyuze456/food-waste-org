@@ -1,7 +1,7 @@
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: #f7f7f7;
-
+}
 
     .privat-content {
         padding: 40px 20px;
@@ -9,7 +9,6 @@ body {
         margin: 0 auto;
         text-align: center;
     }
-
 
     section {
         margin-top: 40px;
@@ -103,7 +102,6 @@ body {
     .newsletter-button:hover {
         background-color: #45a049;
     }
-}
 
 
 

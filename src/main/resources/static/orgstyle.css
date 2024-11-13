@@ -7,7 +7,6 @@
 body {
     font-family: 'Be Vietnam Pro';
     color: #333;
-    line-height: 1.6;
     background-color: #ffffff;
 }
 .footer {
@@ -18,18 +17,14 @@ body {
 .logo-text {
     line-height: 16px;
 }
-.nav {
-    font-weight: 300;
-}
 
 
 .main-content {
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px;
     background-color: #e0f2f1;
     position: relative;
 }
-
 
 .main-content img {
     width: 100%;
@@ -78,7 +73,7 @@ body {
 
 .cards, .org-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -149,14 +144,6 @@ body {
 }
 
 
-.cta-button {
-    background-color: #ff7043;
-    padding: 10px 20px;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
 .faq-section {
     background-color: #e9f5f2;
     padding: 40px 20px;
@@ -245,9 +232,9 @@ body {
 /* Layout for Casestudier Cards */
 .case-studies {
     display: flex; /* Brug flexbox til at placere elementerne side om side */
-    justify-content: space-around; /* Fordeler pladsen mellem kortene */
+    justify-content: center;
     flex-wrap: wrap; /* Gør, at kortene rykker ned på en ny linje, hvis skærmen er for smal */
-    gap: 20px;
+    gap: 40px;
     padding: 20px 0;
 }
 
@@ -260,7 +247,6 @@ body {
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 320px; /* Maksimal bredde for kortene */
-    margin: 0 auto; /* Centrer kortene */
 }
 
 .case-study-image {
@@ -294,15 +280,18 @@ body {
 
 
 .intro-image-section {
+    height: 368px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    margin-bottom: 30px;
+    position: relative;
 }
 
 
-.intro-image-section .intro-image {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-position: center;
+.intro-image-section img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
 }

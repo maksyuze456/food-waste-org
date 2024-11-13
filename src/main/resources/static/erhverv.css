@@ -5,25 +5,31 @@ body {
     background-color: white;
     font-weight: 300;
 }
-
+section {
+    background-color: #e0f2f1
+}
 h1, h2 {
     margin: 0;
 }
 .main {
+    height: 368px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.resized-image {
     flex-shrink: 0;
     min-width: 100%;
     min-height: 100%;
 }
-.resized-image {
-    width: 100%; /* Ændrer størrelsen på billedet til 50% af forælderens bredde */
-    height: 400px; /* Bevarer billedets proportioner */
-    object-fit: cover; /* Bevarer billedets proportioner */
-
-}
 /* Erhverv-sektion */
 .erhverv-section {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
@@ -32,47 +38,56 @@ h1, h2 {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; /* Sørger for, at kortene tilpasser sig små skærme */
+    background-color: #e0f2f1;
 }
-
-.card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
 }
-
+.card p {
+    margin-top: 8px;
+    color: #757575;
+    font-size: 15px;
+}
+.card {
+    background-color: white;
+}
 .card h2 {
     font-size: 20px;
-    font-weight: bold;
-    color: #82c675;
-    margin: 15px 0;
+    font-weight: 500;
 }
-
-.card p {
-    font-size: 14px;
-    color: #555;
+.intro-heading {
+    font-size: 2.5rem;
+    color: #00796b;
+}
+.flex-container-collumn{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10%;
+}
+.flex-container-collumn h2, p{
+    margin: 0;
+    width: fit-content;
+}
+.intro-text {
     margin-bottom: 20px;
 }
 
 .card .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #82c675;
-    color: white;
+    background-color: #76b66c;
+    padding: 12px 30px;
+    color: #fff;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 14px;
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
 }
 
 .card .btn:hover {

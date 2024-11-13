@@ -38,6 +38,7 @@
     color: black;
     padding: 6px;
     font-size: 13px;
+    font-weight: 300;
 }
 .nav-buttons a:hover,
 .nav-buttons a:focus,
