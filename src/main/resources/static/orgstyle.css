@@ -13,7 +13,10 @@ body {
     margin-top: 0;
 }
 
-
+.case-study img {
+    max-width: 220px;
+    max-height: 125px;
+}
 .logo-text {
     line-height: 16px;
 }
