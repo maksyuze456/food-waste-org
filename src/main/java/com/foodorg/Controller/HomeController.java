@@ -6,22 +6,30 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-    @GetMapping("/")
+    @GetMapping("/index.html")
     public String home() {
         return "index.html";
     }
 
-    @GetMapping("/privat")
+    @GetMapping("/private.html")
+    public String privatMain() {
+        return "private.html";
+    }
+    @GetMapping("/private/privat.html")
     public String privat() {
         return "privat.html";
     }
-    @GetMapping("/organisation")
+    @GetMapping("/organisation.html")
     public String organisation() {
         return "organisation.html";
     }
+    @GetMapping("/erhverv.html")
+    public String erhverv() {
+        return "erhverv.html";
+    }
 
-    @GetMapping("/privat/profil")
-    public String profil() {
-        return "profil.html";
+    @GetMapping("/private/profile.html")
+    public String profile() {
+        return "profile.html";
     }
 }
